@@ -17,7 +17,7 @@ export const personalInfo = {
         { name: "Javascript", color: "yellow" },
         { name: "Python", color: "green" },
         { name: "Github", color: "pink" },
-        { name: "MYSQ", color: "orange" }
+        { name: "MySQL", color: "orange" }
     ],
     aboutText: [
         "I'm a web developer with 5+ years of experience building modern web applications.",
