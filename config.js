@@ -14,14 +14,10 @@ export const personalInfo = {
     skills: [
         { name: "HTML5", color: "purple" },
         { name: "CSS3", color: "blue" },
-        { name: "JavaScript", color: "yellow" },
-        { name: "React", color: "green" },
-        { name: "Node.js", color: "cyan" },
-        { name: "TypeScript", color: "red" },
-        { name: "Tailwind CSS", color: "indigo" },
-        { name: "Git", color: "pink" },
-        { name: "MongoDB", color: "orange" },
-        { name: "PostgreSQL", color: "teal" }
+        { name: "Javascript", color: "yellow" },
+        { name: "Python", color: "green" },
+        { name: "Github", color: "pink" },
+        { name: "MYSQ", color: "orange" }
     ],
     aboutText: [
         "I'm a web developer with 5+ years of experience building modern web applications.",
