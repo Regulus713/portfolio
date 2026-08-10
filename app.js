@@ -12,19 +12,19 @@ const ProjectRenderer = {
             .join('');
 
         return `
-            <div class="card-hover bg-white rounded-xl p-6 shadow-md border border-gray-100" style="animation-delay: ${index * 0.1}s">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 bg-${theme.primaryColor}-100 rounded-lg flex items-center justify-center">
+            <div class="card-hover bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col h-full" style="animation-delay: ${index * 0.1}s">
+                <div class="flex items-center gap-4 mb-5">
+                    <div class="w-12 h-12 bg-${theme.primaryColor}-100 rounded-xl flex items-center justify-center">
                         <i data-lucide="${project.icon}" class="w-6 h-6 text-${theme.primaryColor}-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold text-gray-800">${project.title}</h3>
                 </div>
-                <p class="text-gray-600 mb-4">${project.description}</p>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <p class="text-gray-600 mb-5 leading-relaxed flex-grow">${project.description}</p>
+                <div class="flex flex-wrap gap-2 mb-5">
                     ${techBadges}
                 </div>
-                <a href="${project.link}" target="_blank" rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-2 text-${theme.primaryColor}-600 font-medium hover:text-${theme.primaryColor}-700 transition-colors">
+                <a href="${project.link}" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 text-${theme.primaryColor}-600 font-semibold hover:text-${theme.primaryColor}-700 transition-colors mt-auto">
                     View Project
                     <i data-lucide="external-link" class="w-4 h-4"></i>
                 </a>
@@ -70,7 +70,7 @@ const PersonalInfoRenderer = {
         if (!container) return;
 
         container.innerHTML = paragraphs
-            .map(para => `<p class="text-lg text-gray-600 mb-6">${para}</p>`)
+            .map(para => `<p class="text-lg text-gray-600 leading-relaxed">${para}</p>`)
             .join('');
     },
 
@@ -94,10 +94,12 @@ const PersonalInfoRenderer = {
 
         contactContainer.innerHTML = links
             .map(link => `
-                <a href="${link.href}" target="_blank" rel="noopener noreferrer" 
-                   class="card-hover flex items-center gap-3 bg-gray-50 px-6 py-4 rounded-xl hover:bg-${theme.primaryColor}-50 transition-colors">
-                    <i data-lucide="${link.icon}" class="w-6 h-6 text-${theme.primaryColor}-600"></i>
-                    <span class="font-medium text-gray-700">${link.text}</span>
+                <a href="${link.href}" target="_blank" rel="noopener noreferrer"
+                   class="card-hover group flex items-center gap-4 bg-white border border-gray-100 px-6 py-4 rounded-2xl shadow-sm hover:border-${theme.primaryColor}-200 hover:bg-${theme.primaryColor}-50/50 transition-all">
+                    <div class="w-11 h-11 rounded-xl bg-${theme.primaryColor}-100 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="${link.icon}" class="w-5 h-5 text-${theme.primaryColor}-600"></i>
+                    </div>
+                    <span class="font-semibold text-gray-700">${link.text}</span>
                 </a>
             `)
             .join('');

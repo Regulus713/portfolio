@@ -77,9 +77,9 @@ export const projects = [
 ];
 
 export const theme = {
-    primaryColor: "purple",
-    gradientStart: "#667eea",
-    gradientEnd: "#764ba2",
+    primaryColor: "indigo",
+    gradientStart: "#4f46e5",
+    gradientEnd: "#db2777",
     darkMode: {
         enabled: true,
         default: false // Set to true to enable dark mode by default
