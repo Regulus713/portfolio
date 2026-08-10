@@ -43,14 +43,14 @@ export const projects = [
         title: "E-Commerce Platform",
         description: "A full-featured online store with Authentication, cart functionality, and admin dashboard.",
         technologies: ["PHP", "Laravel", "Livewire", "MYSQL"],
-        link: "https://example.com/project1",
+        link: "https://github.com/Regulus713/inventory-ecommerce",
         icon: "shopping-cart"
     },
     {
         title: "Task Management App",
         description: "A collaborative project management tool with real-time updates and team features.",
         technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-        link: "https://example.com/project2",
+        link: "toolvault.raidboudra.com",
         icon: "check-square"
     }
    
