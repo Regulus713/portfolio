@@ -2,7 +2,7 @@
 // Edit this file to customize your portfolio content
 
 export const personalInfo = {
-    name: "John Developer",
+    name: "Raid Boudra",
     title: "Full Stack Web Developer",
     bio: "Passionate about creating beautiful, functional, and user-centered digital experiences. I bring ideas to life through clean code and thoughtful design.",
     email: "john@example.com",
