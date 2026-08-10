@@ -31,10 +31,10 @@ export const personalInfo = {
         { name: "Context Management", color: "orange" }
     ],
     aboutText: [
-        "I'm a fresh graduate full-stack web developer with passion for building modern web applications.",
-        "I specialize in creating responsive, accessible, and performant websites that help businesses grow.",
-        "My approach combines technical expertise with creative problem-solving to deliver solutions that not only work well but also provide exceptional user experiences.",
-        "When I'm not coding, you can find me exploring new technologies, such as Agentic AI which I believe is going to take over the web in the next few years."
+        "I'm a fresh graduate and full-stack web developer with a passion for building modern web applications and AI-powered solutions.",
+        "I specialize in creating responsive, accessible, and performant applications while exploring Agentic AI, LLMs, prompt engineering, and AI-driven development",
+        "I'm particularly interested in building AI agents and agentic workflows that can leverage tools, automate tasks, and solve complex problems.",
+        "I enjoy experimenting with emerging AI technologies and finding new ways to integrate intelligent automation into web applications."
     ]
 };
 
