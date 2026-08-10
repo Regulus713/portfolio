@@ -47,9 +47,9 @@ export const projects = [
         icon: "shopping-cart"
     },
     {
-        title: "Task Management App",
-        description: "A collaborative project management tool with real-time updates and team features.",
-        technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+        title: "ToolVault for renting",
+        description: "An app for renting tools in real-time, uses Authentication, booking system, notification, forums..etc.",
+        technologies: ["Express.js", "Node.Js", "Tailwind CSS", "Three.js"],
         link: "toolvault.raidboudra.com",
         icon: "check-square"
     }
