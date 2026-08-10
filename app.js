@@ -88,8 +88,8 @@ const PersonalInfoRenderer = {
         const links = [
             { icon: 'mail', text: email, href: `mailto:${email}` },
             { icon: 'github', text: 'GitHub', href: socialLinks.github },
-            { icon: 'linkedin', text: 'LinkedIn', href: socialLinks.linkedin },
-            { icon: 'twitter', text: 'Twitter', href: socialLinks.twitter }
+            //{ icon: 'linkedin', text: 'LinkedIn', href: socialLinks.linkedin },
+            //{ icon: 'twitter', text: 'Twitter', href: socialLinks.twitter }
         ];
 
         contactContainer.innerHTML = links
