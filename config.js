@@ -5,11 +5,11 @@ export const personalInfo = {
     name: "Raid Boudra",
     title: "Full Stack Web Developer",
     bio: "Passionate about creating beautiful, functional, and user-centered digital experiences. I bring ideas to life through clean code and thoughtful design.",
-    email: "john@example.com",
+    email: "raidboudra713@gmail.com",
     socialLinks: {
-        github: "https://github.com/johndeveloper",
-        linkedin: "https://linkedin.com/in/johndeveloper",
-        twitter: "https://twitter.com/johndeveloper"
+        github: "https://github.com/regulus713",
+        linkedin: "https://linkedin.com/in/RaidBoudra",
+        
     },
     skills: [
         { name: "HTML5", color: "purple" },
@@ -31,18 +31,18 @@ export const personalInfo = {
         { name: "Context Management", color: "orange" }
     ],
     aboutText: [
-        "I'm a web developer with 5+ years of experience building modern web applications.",
+        "I'm a fresh graduate full-stack web developer with passion for building modern web applications.",
         "I specialize in creating responsive, accessible, and performant websites that help businesses grow.",
         "My approach combines technical expertise with creative problem-solving to deliver solutions that not only work well but also provide exceptional user experiences.",
-        "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical writing."
+        "When I'm not coding, you can find me exploring new technologies, such as Agentic AI which I believe is going to take over the web in the next few years."
     ]
 };
 
 export const projects = [
     {
         title: "E-Commerce Platform",
-        description: "A full-featured online store with cart functionality, payment processing, and admin dashboard.",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+        description: "A full-featured online store with Authentication, cart functionality, and admin dashboard.",
+        technologies: ["PHP", "Laravel", "Livewire", "MYSQL"],
         link: "https://example.com/project1",
         icon: "shopping-cart"
     },
@@ -52,35 +52,29 @@ export const projects = [
         technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
         link: "https://example.com/project2",
         icon: "check-square"
-    },
-    {
-        title: "Weather Dashboard",
-        description: "A beautiful weather application with location-based forecasts and interactive maps.",
-        technologies: ["JavaScript", "API Integration", "Chart.js"],
-        link: "https://example.com/project3",
-        icon: "cloud"
-    },
-    {
-        title: "Portfolio Template",
-        description: "A modern, responsive portfolio template for developers and designers.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        link: "https://example.com/project4",
-        icon: "layout"
-    },
-    {
-        title: "Social Media App",
-        description: "A social networking platform with posts, comments, and real-time messaging.",
-        technologies: ["React", "Redux", "Socket.io", "Node.js"],
-        link: "https://example.com/project5",
-        icon: "users"
-    },
-    {
-        title: "Blog Platform",
-        description: "A content management system for bloggers with markdown support and SEO optimization.",
-        technologies: ["Next.js", "PostgreSQL", "MDX"],
-        link: "https://example.com/project6",
-        icon: "file-text"
     }
+   
+    // {
+    //     title: "Portfolio Template",
+    //     description: "A modern, responsive portfolio template for developers and designers.",
+    //     technologies: ["HTML", "CSS", "JavaScript"],
+    //     link: "https://example.com/project4",
+    //     icon: "layout"
+    // },
+    // {
+    //     title: "Social Media App",
+    //     description: "A social networking platform with posts, comments, and real-time messaging.",
+    //     technologies: ["React", "Redux", "Socket.io", "Node.js"],
+    //     link: "https://example.com/project5",
+    //     icon: "users"
+    // },
+    // {
+    //     title: "Blog Platform",
+    //     description: "A content management system for bloggers with markdown support and SEO optimization.",
+    //     technologies: ["Next.js", "PostgreSQL", "MDX"],
+    //     link: "https://example.com/project6",
+    //     icon: "file-text"
+    // }
 ];
 
 export const theme = {
