@@ -210,6 +210,7 @@ const App = {
         PersonalInfoRenderer.renderHero(personalInfo.name, personalInfo.title, personalInfo.bio);
         PersonalInfoRenderer.renderAboutText('about-text-container', personalInfo.aboutText);
         PersonalInfoRenderer.renderSkills('skills-container', personalInfo.skills);
+        PersonalInfoRenderer.renderSkills('ai-skills-container', personalInfo.aiSkills);
         PersonalInfoRenderer.renderContactLinks(personalInfo.socialLinks, personalInfo.email);
         PersonalInfoRenderer.renderFooter(personalInfo.name);
 

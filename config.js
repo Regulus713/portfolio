@@ -19,6 +19,11 @@ export const personalInfo = {
         { name: "Github", color: "pink" },
         { name: "MySQL", color: "orange" }
     ],
+    aiSkills: [
+        { name: "Devin", color: "indigo" },
+        { name: "Hermes", color: "cyan" },
+        { name: "Prompting and context management", color: "red" }
+    ],
     aboutText: [
         "I'm a web developer with 5+ years of experience building modern web applications.",
         "I specialize in creating responsive, accessible, and performant websites that help businesses grow.",
