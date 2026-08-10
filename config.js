@@ -17,12 +17,18 @@ export const personalInfo = {
         { name: "Javascript", color: "yellow" },
         { name: "Python", color: "green" },
         { name: "Github", color: "pink" },
-        { name: "MySQL", color: "orange" }
+        { name: "MySQL", color: "orange" },
+        { name: "C#", color: "cyan" },
+        { name: "ASP.NET", color: "blue" , icon: "aspnet" },
+        { name: "PHP", color: "purple" },
+        { name : "Laravel", color: "red" , icon: "laravel" },
+        { name: "REST API", color: "green" }
     ],
     aiSkills: [
-        { name: "Devin", color: "indigo" },
-        { name: "Hermes", color: "cyan" },
-        { name: "Prompting and context management", color: "red" }
+        { name: "Devin AI", color: "indigo" },
+        { name: "Hermes Agent", color: "cyan" },
+        { name: "Prompting", color: "red" },
+        { name: "Context Management", color: "orange" }
     ],
     aboutText: [
         "I'm a web developer with 5+ years of experience building modern web applications.",

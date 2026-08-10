@@ -8,13 +8,17 @@
     --accent: #ec4899;
     --surface: #ffffff;
     --surface-soft: #f8fafc;
+    --surface-elevated: #ffffff;
     --text-main: #0f172a;
     --text-muted: #475569;
+    --border: #e2e8f0;
     --radius: 1rem;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --shadow-glow: 0 0 40px -10px rgba(79, 70, 229, 0.35);
+    --tag-bg-alpha: 0.08;
+    --tag-border-alpha: 0.15;
 }
 
 * {
@@ -107,14 +111,24 @@ html {
     backdrop-filter: blur(12px);
 }
 
-/* Dark Theme Styles */
+/* Dark Theme Styles
+   Palette: deep slate base with elevated surfaces, softened shadows,
+   and translucent skill tags that keep their hue without harsh contrast. */
 body.dark {
-    background-color: #020617;
-    color: #e2e8f0;
-    --surface: #0f172a;
-    --surface-soft: #1e293b;
-    --text-main: #f8fafc;
+    background-color: #141821;
+    color: #cbd5e1;
+    --gradient-start: #6366f1;
+    --gradient-end: #c026d3;
+    --surface: #1c2230;
+    --surface-soft: #161b26;
+    --surface-elevated: #232a3a;
+    --text-main: #e8edf5;
     --text-muted: #94a3b8;
+    --border: #2a3142;
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+    --shadow-glow: 0 0 40px -10px rgba(99, 102, 241, 0.3);
+    --tag-bg-alpha: 0.14;
+    --tag-border-alpha: 0.22;
 }
 
 body.dark .bg-white {
@@ -131,28 +145,51 @@ body.dark .text-gray-700 {
 }
 
 body.dark .bg-gray-50 {
-    background-color: #020617 !important;
+    background-color: var(--surface-soft) !important;
 }
 
 body.dark .border-gray-100 {
-    border-color: #334155 !important;
+    border-color: var(--border) !important;
 }
 
 body.dark .shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.35) !important;
 }
 
 body.dark nav {
-    background-color: rgba(15, 23, 42, 0.85) !important;
+    background-color: rgba(20, 24, 33, 0.8) !important;
 }
 
 body.dark .bg-gray-100 {
-    background-color: #334155 !important;
+    background-color: var(--surface-elevated) !important;
 }
 
 body.dark .glass-card {
-    background: rgba(15, 23, 42, 0.6);
-    border-color: rgba(255, 255, 255, 0.06);
+    background: rgba(28, 34, 48, 0.55);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Skill tags: override the light Tailwind pastels in dark mode
+   with translucent tints that preserve each skill's hue. */
+body.dark .skill-tag {
+    color: #e8edf5 !important;
+    border: 1px solid rgba(255, 255, 255, var(--tag-border-alpha));
+}
+
+body.dark .skill-tag[class*="bg-purple-"]    { background-color: rgba(168, 85, 247, var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-blue-"]      { background-color: rgba(59, 130, 246, var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-yellow-"]    { background-color: rgba(234, 179, 8,  var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-green-"]     { background-color: rgba(34, 197, 94,  var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-cyan-"]      { background-color: rgba(6, 182, 212,  var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-red-"]       { background-color: rgba(239, 68, 68,  var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-indigo-"]    { background-color: rgba(99, 102, 241, var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-pink-"]      { background-color: rgba(236, 72, 153, var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-orange-"]    { background-color: rgba(249, 115, 22, var(--tag-bg-alpha)) !important; }
+body.dark .skill-tag[class*="bg-teal-"]      { background-color: rgba(20, 184, 166, var(--tag-bg-alpha)) !important; }
+
+/* Smooth transition when toggling themes */
+body, .bg-white, .bg-gray-50, .bg-gray-100, nav, .skill-tag, .glass-card, .border-gray-100 {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 /* Theme toggle button */
@@ -182,5 +219,5 @@ body.dark .glass-card {
 
 body.dark .theme-toggle {
     background: rgba(255, 255, 255, 0.08);
-    color: #e2e8f0;
+    color: #e8edf5;
 }
