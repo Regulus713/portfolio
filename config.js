@@ -50,7 +50,7 @@ export const projects = [
         title: "ToolVault for renting",
         description: "An app for renting tools in real-time, uses Authentication, booking system, notification, forums..etc.",
         technologies: ["Express.js", "Node.Js", "Tailwind CSS", "Three.js"],
-        link: "toolvault.raidboudra.com",
+        link: "https://toolvault.raidboudra.com",
         icon: "check-square"
     }
    
