@@ -1,0 +1,6 @@
+# Serve .js files with a standard JavaScript MIME type.
+# Required for ES module scripts (<script type="module">) — browsers reject
+# the legacy "application/x-javascript" MIME type that Hostinger sends by default.
+<IfModule mod_mime.c>
+  AddType text/javascript .js
+</IfModule>
