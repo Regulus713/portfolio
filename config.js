@@ -52,15 +52,17 @@ export const projects = [
         technologies: ["Express.js", "Node.Js", "Tailwind CSS", "Three.js"],
         link: "https://toolvault.raidboudra.com",
         icon: "check-square"
-    }
+    },
    
-    // {
-    //     title: "Portfolio Template",
-    //     description: "A modern, responsive portfolio template for developers and designers.",
-    //     technologies: ["HTML", "CSS", "JavaScript"],
-    //     link: "https://example.com/project4",
-    //     icon: "layout"
-    // },
+    {
+        title: "Pokedex",
+        description: "A frontend application for browsing and searching Pokémon data using PokeAPI.",
+        technologies: ["HTML", "CSS", "JavaScript", "PokeAPI","localStorage"],
+        link: "https://pokedex.raidboudra.com",
+        icon: "layout"
+    },
+
+
     // {
     //     title: "Social Media App",
     //     description: "A social networking platform with posts, comments, and real-time messaging.",
