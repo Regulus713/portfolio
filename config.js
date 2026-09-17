@@ -39,7 +39,26 @@ export const personalInfo = {
 };
 
 export const projects = [
+
     {
+        title: "YugiPoke",
+                description: "A Yugioh-type card dueling game with Pokemon cards from fetching POKEAPI, simulation was done through Python to check if the decks are balanced",
+                technologies: ["CSS", "HTML", "Javascript", "Python"],
+                link: "yugipoke.raidboudra.com",
+                icon: "users"
+    },
+
+    {
+        
+        // {
+        //     title: "Social Media App",
+        //     description: "A social networking platform with posts, comments, and real-time messaging.",
+        //     technologies: ["React", "Redux", "Socket.io", "Node.js"],
+        //     link: "https://example.com/project5",
+        //     icon: "users"
+        // },
+
+
         title: "E-Commerce Platform",
         description: "A full-featured online store with Authentication, cart functionality, and admin dashboard.",
         technologies: ["PHP", "Laravel", "Livewire", "MYSQL"],
@@ -63,13 +82,8 @@ export const projects = [
     },
 
 
-    // {
-    //     title: "Social Media App",
-    //     description: "A social networking platform with posts, comments, and real-time messaging.",
-    //     technologies: ["React", "Redux", "Socket.io", "Node.js"],
-    //     link: "https://example.com/project5",
-    //     icon: "users"
-    // },
+
+
     // {
     //     title: "Blog Platform",
     //     description: "A content management system for bloggers with markdown support and SEO optimization.",
