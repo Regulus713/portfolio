@@ -44,7 +44,7 @@ export const projects = [
         title: "YugiPoke",
                 description: "A Yugioh-type card dueling game with Pokemon cards from fetching POKEAPI, simulation was done through Python to check if the decks are balanced",
                 technologies: ["CSS", "HTML", "Javascript", "Python"],
-                link: "yugipoke.raidboudra.com",
+                link: "https://yugipoke.raidboudra.com",
                 icon: "users"
     },
 
